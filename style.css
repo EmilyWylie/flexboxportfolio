@@ -1,0 +1,119 @@
+* { 
+    box-sizing: border-box;
+}
+
+/*style for the h2 and buttons*/
+header {
+    width: 500;
+    background: #284B63;
+    padding: 30px; 
+    margin: 30px;
+    text-align: center;
+}
+
+/*the appearance of the buttons at the top of the page*/
+button {
+    color: #ffffff;
+    background-color: #284b63;
+    border-radius: 20%;  
+    margin: 15px;
+}
+
+/*effects on the links*/
+a:link {
+    color: #f4f81f;
+}
+
+a:visited {
+    color: #31dd2b;
+}
+
+a:hover {
+    color: #02273f;
+}
+
+a:active {
+    color: #740c0c;
+}
+
+/* horizontal page breaks*/
+hr {
+    border: 3px solid #284b63; 
+    border-radius: 5px;
+    width: 50%;
+}
+
+/* header/title of the website page*/
+h1 {
+    color: #ffffff;
+    text-align: center; 
+    margin-bottom: 70px;
+    font-size: 100px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 4px;
+    line-height: 3px;
+}
+
+h2 {
+    color:  #ffffff;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+/*centering all text on the page below the main photo */
+p, ul, ol {
+    color: #ffffff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-position: inside;
+    
+}
+
+/* placement of the main photo */
+img {
+    display: flex;
+    width: 100%;
+    max-width: 250px;
+    max-height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+    object-fit: scale-down;
+  }
+  
+  .button {
+      border: solid #ffffff; 
+      border-radius: 25%;
+      margin: 12px;
+      padding: 5px;
+      }
+
+    .group {
+        display: flex;
+        padding: 25px;
+        margin-right: 200px;
+        flex-direction: column;
+        object-fit: scale-down;
+
+     }
+
+    .half {
+        flex: 1;
+    }
+
+    .one-third {
+        flex: 2;     
+    }
+
+    .two-thirds {
+        flex: 2; 
+    }
+
+      @media all and (min-width: 800px) {
+          .group {
+              flex-direction: row;
+          }
+      }
